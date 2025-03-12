@@ -29,7 +29,7 @@ class KClassifier(nn.Module):
         logits = self.linear_relu_stack(x)
         return logits
 
-# Charger le modèle avec st.cache_resource
+# Charger le modèle avec st.cache_resource sauvegarder
 @st.cache_resource
 def load_model():
     model = KClassifier()
