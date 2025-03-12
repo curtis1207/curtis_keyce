@@ -5,7 +5,7 @@ from PIL import Image
 import torch.nn as nn
 import os
 import io
-import numpy as np
+
 
 class KClassifier(nn.Module):
     def __init__(self, dim_output=4):
