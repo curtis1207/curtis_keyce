@@ -80,7 +80,7 @@ if uploaded_file is not None:
         
         # Vérifier que le modèle est correctement chargé avant de faire une prédiction
         if model:
-            # Faire la prédiction
+            # Faire la prédiction des données
             with torch.no_grad():  # Pas besoin de calculer les gradients
                 preds = model(img_tensor)  # Prédiction avec le modèle
 
